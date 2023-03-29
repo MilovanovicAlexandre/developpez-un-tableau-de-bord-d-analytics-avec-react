@@ -1,0 +1,43 @@
+.pageHeader {
+    background-color: #020203;
+    padding-top:15px;
+    padding-bottom:15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+}
+
+.containerLogoSportSee {
+    /*background-color: aqua;*/
+    height: 60.93px;
+    margin-left: 12px;
+    /*margin-left: 1.5%;*/
+}
+
+.logoSportSee {
+    height: 100%;
+}
+
+.containerNavigationList {
+    /*background-color: darkgreen;*/
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-left: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.containerNavigationList a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.pageNavigation {
+    width:70%;
+    margin-right: 6%;
+}
+

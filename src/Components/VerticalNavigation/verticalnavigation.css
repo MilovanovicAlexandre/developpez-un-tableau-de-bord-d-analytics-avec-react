@@ -1,0 +1,44 @@
+.containerVerticalNavigation {
+    background-color: #020203;
+    /*background-color: green;*/
+    width: 90px;
+    height: calc(100vh - 100px); /*The function calc allows to calculate an operation. Here, 100vh matches to the total height
+    of the screen/ viewport and 100px matches to the height of the header component so the header and vertical navigations
+    components are totally nested and there is no vertical overflow and so the vertical scroll bar doesn't appear*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconVerticalNavigation {
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+}
+
+.copyrightVerticalNavigation {
+    color: #FFFFFF;
+    font-size: 7px;
+    transform: rotate(-90deg);
+    width:150px;
+}
+
+.containerIconsVerticalNav {
+    background-color: #020203;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top:150px;
+}
+
+.containerCopyrightVerticalNav {
+    /*background-color: blueviolet;*/
+    margin-bottom: 100px;
+}

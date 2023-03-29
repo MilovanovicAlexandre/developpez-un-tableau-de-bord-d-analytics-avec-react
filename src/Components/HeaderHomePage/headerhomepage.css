@@ -1,0 +1,20 @@
+.pageHomeHeader {
+    background-color: #020203;
+    padding-top:15px;
+    padding-bottom:15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:70px;
+}
+
+.containerOfLogoSportSee {
+    /*background-color: aqua;*/
+    height: 60.93px;
+    margin-left: 12px;
+    /*margin-left: 1.5%;*/
+}
+
+.pictureLogoSportSee {
+    height: 100%;
+}

@@ -1,0 +1,43 @@
+.mainContainerProfileChoice {
+    margin-top: 100px;
+}
+
+.mainContainerProfileChoice a {
+    text-decoration: none;
+}
+
+.textProfile {
+    font-size: 50px;
+    text-align: center;
+}
+
+.containerPresentationProfiles {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerFirstProfile {
+    background-color: #020203;
+    padding-left: 0px;
+    list-style-type: none;
+    font-size: 40px;
+    padding:10px;
+    color:#FF0101;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.containerSecondProfile {
+    background-color: #020203;
+    padding-left: 0px;
+    list-style-type: none;
+    font-size: 40px;
+    padding:10px;
+    color:#FF0101;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+}
