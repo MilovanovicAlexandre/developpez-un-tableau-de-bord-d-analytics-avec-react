@@ -1,0 +1,30 @@
+.containerTextErrorAndLink {
+    /*background-color: aqua;*/
+    height:calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerTextError404 {
+    /*background-color: green;*/
+}
+
+.textError404 {
+    font-size: 65px;
+    color: #000000;
+}
+
+.textLinkError404 {
+    font-size: 20px;
+}
+
+.containerLinkError404 a {
+    text-decoration: none;
+    color: #FF0101;
+}
+
+.containerLinkError404 a:hover {
+    text-decoration: underline;
+}

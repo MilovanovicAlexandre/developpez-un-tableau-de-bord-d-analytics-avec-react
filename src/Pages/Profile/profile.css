@@ -5,10 +5,46 @@
 
 .containerEntireProfile {
     /*background-color: blue;*/
-    
+    display:flex;
+    flex-direction: row;
 }
 
 .containerVerticalNav {
     /*height:100%;*/
-    /*background-color: green;*/
+    /*background-color: aqua;
+    width:90px;*/
+}
+
+.containerDashBoard {
+    background-color: blue;
+    width:calc(100% - 90px); /*the width of this element corresponds to a substraction. So 100% is the width of it parent 
+    element minus 90px which corresponds to the width of the vertical navigation*/
+}
+
+.containerHelloText {
+    background-color: green;
+    margin-top:40px;
+    margin-left: 8%;
+}
+
+.titleHelloText{
+    font-size: 35px;
+}
+
+.congratulationsText {
+    font-size: 14px;
+}
+
+.HelloTextFirstName{
+    color:#FF0101;
+}
+
+.containerGraphsScoreKeyData{
+    background-color: yellowgreen;
+    display:flex;
+    flex-direction: row;
+}
+
+.containerKeyData{
+    margin-bottom: 50px;   
 }

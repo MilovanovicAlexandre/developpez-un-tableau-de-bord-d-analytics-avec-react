@@ -12,9 +12,9 @@ function App() {
         If the 3 top path have not been find so the component Error is called
         */}
         <Routes>
-          <Route path='/' element={<Navigate to='Home' />}/>
+          <Route path='/' element={<Navigate to='/Home' />}/>
           <Route path='/Home' element={<Home />}/>
-          <Route path='/Profile/:UserId' element={<Profile />}/>
+          <Route path='/Profile/:userId' element={<Profile />}/>
           <Route path='*' element={<Error />}/>        
         </Routes>  
       </Router>
