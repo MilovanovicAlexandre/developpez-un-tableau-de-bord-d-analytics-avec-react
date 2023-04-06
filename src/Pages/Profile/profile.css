@@ -1,28 +1,16 @@
-.containerMainProfile {
-    /*background-color: aqua;*/
-    
-}
-
 .containerEntireProfile {
-    /*background-color: blue;*/
     display:flex;
     flex-direction: row;
 }
 
-.containerVerticalNav {
-    /*height:100%;*/
-    /*background-color: aqua;
-    width:90px;*/
-}
-
 .containerDashBoard {
-    background-color: blue;
+    /*background-color: blue;*/
     width:calc(100% - 90px); /*the width of this element corresponds to a substraction. So 100% is the width of it parent 
     element minus 90px which corresponds to the width of the vertical navigation*/
 }
 
 .containerHelloText {
-    background-color: green;
+    /*background-color: green;*/
     margin-top:40px;
     margin-left: 8%;
 }
@@ -40,11 +28,33 @@
 }
 
 .containerGraphsScoreKeyData{
-    background-color: yellowgreen;
+    /*background-color: violet;*/
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .containerKeyData{
+    /*background-color: red;*/
+    width:150px;
     margin-bottom: 50px;   
+}
+
+.containerGraphsScore {
+    /*background-color: greenyellow;*/
+    width:80%;
+}
+
+.containerAllKeyData {
+    /*background-color: blueviolet;*/
+    width:20%;  
+}
+
+.containerBarChartActivity {
+    /*background-color: blue;*/
+    margin-left: 15%;
+}
+
+.containerAverageSessions {
+    background-color: blue;
 }

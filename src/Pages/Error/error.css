@@ -1,5 +1,4 @@
 .containerTextErrorAndLink {
-    /*background-color: aqua;*/
     height:calc(100vh - 100px);
     display: flex;
     flex-direction: column;
@@ -7,13 +6,17 @@
     align-items: center;
 }
 
-.containerTextError404 {
-    /*background-color: green;*/
-}
-
 .textError404 {
     font-size: 65px;
     color: #000000;
+    text-align: center;
+}
+
+.textError404Continuation {
+    font-size: 65px;
+    color: #000000;
+    text-align: center;
+    margin-top: -70px;
 }
 
 .textLinkError404 {

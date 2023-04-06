@@ -1,6 +1,5 @@
 .containerVerticalNavigation {
     background-color: #020203;
-    /*background-color: green;*/
     width: 90px;
     height: calc(100vh - 100px); /*The function calc allows to calculate an operation. Here, 100vh matches to the total height
     of the screen/ viewport and 100px matches to the height of the header component so the header and vertical navigations
@@ -39,6 +38,5 @@
 }
 
 .containerCopyrightVerticalNav {
-    /*background-color: blueviolet;*/
     margin-bottom: 100px;
 }

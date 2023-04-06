@@ -1,0 +1,72 @@
+.blackCircle {
+    width:8px;
+    height:8px;
+    background-color: #282D30;
+    border-radius: 25px;
+}
+
+.redCircle {
+    width:8px;
+    height:8px;
+    background-color: #E60000;
+    border-radius: 25px;
+}
+
+.textDailyActivity {
+    font-size:15px;
+    color: #20253A;
+}
+
+.textWeightKg {
+    /*background-color: red;*/
+    font-size: 14px;
+    color: #74798C;
+    margin-left: 10px;
+}
+
+.textCaloriesBurnt {
+    /*background-color: red;*/
+    font-size: 14px;
+    color:#74798C;
+    margin-left: 10px;
+}
+
+.containerTextDailyActivityWeightCalories {
+    /*background-color: aqua;*/
+    width:90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerTextDailyActivity {
+    /*background-color: green;*/
+    flex:0.4
+}
+
+.containerCirclesAndTextWeightCalories {
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex:0.6
+}
+
+.containerBlackCircleAndTextWeight{
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right:40px;
+}
+
+.containerRedCircleAndTextCalories {
+    /*background-color: brown;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mainContainerBarChartActivity {
+    /*background-color: cadetblue;*/
+}

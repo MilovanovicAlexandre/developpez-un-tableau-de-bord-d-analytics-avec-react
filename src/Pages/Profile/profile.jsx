@@ -5,6 +5,8 @@ import Header from '../../Components/Header/header.jsx'
 import VerticalNavigation from '../../Components/VerticalNavigation/verticalnavigation.jsx'
 import { getData } from '../../Service/apiCallsAndMockCalls.jsx'
 import KeyData from '../../Components/KeyData/keydata.jsx'
+import BarChartActivity from '../../Components/BarChartActivity/barchartactivity.jsx'
+import LineChartAverageSessions from '../../Components/LineChartAverageSessions/linechartaveragesessions.jsx'
 import iconCalories from '../../Assets/iconCalories.png'
 import iconProteines from '../../Assets/iconProteines.png'
 import iconGlucides from '../../Assets/iconGlucides.png'
@@ -18,12 +20,9 @@ function Profile() {
   const id = parseInt(userId) 
   const [dataUserInfos, setDataUserInfos] = useState({})
    
-
   useEffect(() => {
     async function getTheData(userId){
-      //const dataUser =  await getData(userId, 'userInfos')
       setDataUserInfos(await getData(userId, 'userInfos'))
-      //setDataKeyData(await getData(userId, 'keyData'))
     }
     getTheData(id)
     
@@ -45,13 +44,17 @@ function Profile() {
             </div>
             <div className='containerGraphsScoreKeyData'>
               <div className='containerGraphsScore'>
-
+                <div className='containerBarChartActivity'>
+                  <BarChartActivity />  
+                </div>
+                <div className='containerAverageSessions'>
+                  <LineChartAverageSessions />
+                </div>
               </div>
               <div className='containerAllKeyData'>
                 <div className='containerKeyData'>
                      <KeyData 
-                     keyDataName= 'Calories' 
-                      
+                     keyDataName= 'Calories'   
                      keyDataImage={iconCalories}
                      keyDataContainerImageClass='containerIconKeyDataCalories'
                      />
@@ -59,7 +62,6 @@ function Profile() {
                 <div className='containerKeyData'>
                      <KeyData 
                      keyDataName= 'Proteines' 
-                      
                      keyDataImage={iconProteines}
                      keyDataContainerImageClass='containerIconKeyDataProteines'
                      />
@@ -67,7 +69,6 @@ function Profile() {
                 <div className='containerKeyData'>
                      <KeyData 
                      keyDataName= 'Glucides' 
-                      
                      keyDataImage={iconGlucides}
                      keyDataContainerImageClass='containerIconKeyDataGlucides'
                      />
@@ -75,7 +76,6 @@ function Profile() {
                 <div className='containerKeyData'>
                     <KeyData 
                     keyDataName= 'Lipides' 
-                     
                     keyDataImage={iconLipides}
                     keyDataContainerImageClass='containerIconKeyDataLipides'
                     />

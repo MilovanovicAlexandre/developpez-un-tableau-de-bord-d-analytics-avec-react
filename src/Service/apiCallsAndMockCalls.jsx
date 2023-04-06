@@ -10,8 +10,6 @@ async function getData(id,dataToRetrieve) {
 
     if(dataMocked === true){
         console.log('id='+id+'et typeof(id)='+typeof(id))
-        /*const response = USER_MAIN_DATA.find(element => element.id === id)
-        return response.userInfos*/
         
         switch(dataToRetrieve) {
 
@@ -23,12 +21,13 @@ async function getData(id,dataToRetrieve) {
                 return response.todayScore
             case 'keyData':
                 response = USER_MAIN_DATA.find(element => element.id === id)
+                response.keyData.calorieCount= (response.keyData.calorieCount).toLocaleString('en-US')
                 return response.keyData
             case 'sessionsUserActivity':
-                response = USER_ACTIVITY.find(element => element.id === id)
+                response = USER_ACTIVITY.find(element => element.userId === id)
                 return response.sessions
             case 'sessionsUserAverage':
-                response = USER_AVERAGE_SESSIONS.find(element => element.id === id)
+                response = USER_AVERAGE_SESSIONS.find(element => element.userId === id)
                 return response.sessions
             case 'kindUserPerformance':
                 response = USER_PERFORMANCE.find(element => element.id === id)
@@ -45,20 +44,27 @@ async function getData(id,dataToRetrieve) {
         switch(dataToRetrieve) {
 
             case 'userInfos':
-                response = await axios.get(`http://localhost:3000/user/${id}`)
-                return response.userInfos        
+                response = await axios.get(`http://localhost:3001/user/${id}`)
+                return response.data.data.userInfos        
             case 'todayScore':
-                return ''
+                response = await axios.get(`http://localhost:3001/user/${id}`)
+                return response.data.data.todayScore
             case 'keyData':
-                return ''
+                response = await axios.get(`http://localhost:3001/user/${id}`)
+                response.keyData.calorieCount= (response.keyData.calorieCount).toLocaleString('en-US')
+                return response.data.data.keyData
             case 'sessionsUserActivity':
-                return ''
+                response = await axios.get(`http://localhost:3001/user/${id}/activity`)
+                return response.data.data.sessions                
             case 'sessionsUserAverage':
-                return ''
+                response = await axios.get(`http://localhost:3001/user/${id}/average-sessions`)
+                return response.data.data.sessions
             case 'kindUserPerformance':
-                return ''
+                response = await axios.get(`http://localhost:3001/user/${id}/performance`)
+                return response.data.data.kind
             case 'dataUserPerformance':
-                return ''
+                response = await axios.get(`http://localhost:3001/user/${id}/performance`)
+                return response.data.data.data
             default: 
                 return ''
         }

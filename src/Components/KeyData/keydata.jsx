@@ -12,7 +12,7 @@ function KeyData({keyDataName,keyDataImage,keyDataContainerImageClass}) {
     const id = parseInt(userId)
     const [dataKeyData, setDataKeyData] = useState({})
     let unit = ''
-    let keyDataToDisplay
+    let keyDataToDisplay = 0
 
     useEffect(() => {
         async function getTheData(userId){
@@ -32,7 +32,7 @@ function KeyData({keyDataName,keyDataImage,keyDataContainerImageClass}) {
 
     switch(keyDataName){
         case 'Calories':
-            keyDataToDisplay = dataKeyData.calorieCount    
+            keyDataToDisplay = (dataKeyData.calorieCount)
         break
         case 'Proteines':
             keyDataToDisplay = dataKeyData.proteinCount
@@ -58,7 +58,6 @@ function KeyData({keyDataName,keyDataImage,keyDataContainerImageClass}) {
             </div>
         </div>
     )
-
 }
 
 KeyData.propTypes = {
