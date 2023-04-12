@@ -1,8 +1,8 @@
 .containerToolTipUserActivity {
     background-color: #E60000;
     color:#FFFFFF;
-    padding: 8px;
-    font-size: 10px;
+    padding: 4px;
+    font-size: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

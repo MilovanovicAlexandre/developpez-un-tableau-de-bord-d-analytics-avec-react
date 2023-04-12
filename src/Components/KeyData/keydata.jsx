@@ -49,9 +49,8 @@ function KeyData({keyDataName,keyDataImage,keyDataContainerImageClass}) {
 
     return (
         <div className='mainContainerKeyData'>
-            <div className={keyDataContainerImageClass}>
-                <img src={keyDataImage} alt={keyDataName} className='iconKeyData'/>
-            </div>
+            <div className={keyDataContainerImageClass}></div>
+            <img src={keyDataImage} alt={keyDataName} className='iconKeyData'/>
             <div className='containerKeyDataNumberUnitName'>
                 <p className='keyDataNumberAndUnit'>{keyDataToDisplay}{unit}</p>
                 <p className='keyDataName'>{keyDataName}</p>

@@ -7,6 +7,8 @@ import { getData } from '../../Service/apiCallsAndMockCalls.jsx'
 import KeyData from '../../Components/KeyData/keydata.jsx'
 import BarChartActivity from '../../Components/BarChartActivity/barchartactivity.jsx'
 import LineChartAverageSessions from '../../Components/LineChartAverageSessions/linechartaveragesessions.jsx'
+import RadarChartUserPerformance from '../../Components/RadarChartUserPerformance/radarchartuserperformance.jsx'
+import RadialBarChartScore from '../../Components/RadialBarChartScore/radialbarchartscore.jsx'
 import iconCalories from '../../Assets/iconCalories.png'
 import iconProteines from '../../Assets/iconProteines.png'
 import iconGlucides from '../../Assets/iconGlucides.png'
@@ -16,7 +18,6 @@ import './profile.css'
 function Profile() {
 
   const {userId} = useParams()
-  console.log('userId='+userId)
   const id = parseInt(userId) 
   const [dataUserInfos, setDataUserInfos] = useState({})
    
@@ -27,8 +28,6 @@ function Profile() {
     getTheData(id)
     
   },[id])
-
-  console.log('dataUserInfos='+dataUserInfos)
    
     return (
       <main className='containerMainProfile'>
@@ -49,6 +48,8 @@ function Profile() {
                 </div>
                 <div className='containerAverageSessions'>
                   <LineChartAverageSessions />
+                  <RadarChartUserPerformance />
+                  <RadialBarChartScore />
                 </div>
               </div>
               <div className='containerAllKeyData'>

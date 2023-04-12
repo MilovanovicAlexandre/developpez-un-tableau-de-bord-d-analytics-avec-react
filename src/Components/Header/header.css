@@ -6,11 +6,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height:70px;
+    height:55px;
 }
 
 .containerLogoSportSee {
-    height: 60.93px;
+    /*background-color: yellowgreen;*/
+    height: 55px;
     margin-left: 12px;
 }
 

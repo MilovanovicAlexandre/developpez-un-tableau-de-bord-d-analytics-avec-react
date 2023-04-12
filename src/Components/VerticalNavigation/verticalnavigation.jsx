@@ -7,6 +7,7 @@ import iconNatation from '../../Assets/iconNatation.png'
 import './verticalnavigation.css'
 
 function VerticalNavigation() {
+
     return (
       <div className='containerVerticalNavigation'>
         <div className='containerIconsVerticalNav'>

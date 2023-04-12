@@ -1,5 +1,5 @@
 .containerTextErrorAndLink {
-    height:calc(100vh - 100px);
+    height:calc(100vh - 85px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;

@@ -6,12 +6,12 @@ const USER_MAIN_DATA = [
             lastName: 'Dovineau',
             age: 31,
         },
-        todayScore: 0.12,
+        todayScore: 0.90,
         keyData: {
-            calorieCount: 1930,
-            proteinCount: 155,
-            carbohydrateCount: 290,
-            lipidCount: 50
+            calorieCount: 6030,
+            proteinCount: 255,
+            carbohydrateCount: 390,
+            lipidCount: 90
         }
     },
     {
@@ -21,12 +21,12 @@ const USER_MAIN_DATA = [
             lastName: 'Ratorez',
             age: 34,
         },
-        score: 0.3,
+        todayScore: 0.5,
         keyData: {
-            calorieCount: 2500,
-            proteinCount: 90,
-            carbohydrateCount: 150,
-            lipidCount: 120
+            calorieCount: 1500,
+            proteinCount: 30,
+            carbohydrateCount: 200,
+            lipidCount: 320
         }
     }
 ]
@@ -42,7 +42,7 @@ const USER_ACTIVITY = [
             },
             {
                 day: '2020-07-02',
-                kilogram: 80,
+                kilogram: 76,
                 calories: 220
             },
             {
@@ -62,7 +62,7 @@ const USER_ACTIVITY = [
             },
             {
                 day: '2020-07-06',
-                kilogram: 78,
+                kilogram: 81,
                 calories: 162
             },
             {
@@ -82,7 +82,7 @@ const USER_ACTIVITY = [
             },
             {
                 day: '2020-07-02',
-                kilogram: 69,
+                kilogram: 70,
                 calories: 220
             },
             {
@@ -92,7 +92,7 @@ const USER_ACTIVITY = [
             },
             {
                 day: '2020-07-04',
-                kilogram: 70,
+                kilogram: 68,
                 calories: 500
             },
             {
@@ -107,7 +107,7 @@ const USER_ACTIVITY = [
             },
             {
                 day: '2020-07-07',
-                kilogram: 69,
+                kilogram: 66,
                 calories: 390
             }
         ]
@@ -121,31 +121,31 @@ const USER_AVERAGE_SESSIONS = [
         sessions: [
             {
                 day: 1,
-                sessionLength: 30
-            },
-            {
-                day: 2,
-                sessionLength: 23
-            },
-            {
-                day: 3,
-                sessionLength: 45
-            },
-            {
-                day: 4,
                 sessionLength: 50
             },
             {
+                day: 2,
+                sessionLength: 25
+            },
+            {
+                day: 3,
+                sessionLength: 38
+            },
+            {
+                day: 4,
+                sessionLength: 10
+            },
+            {
                 day: 5,
-                sessionLength: 0
+                sessionLength: 80
             },
             {
                 day: 6,
-                sessionLength: 0
+                sessionLength: 20
             },
             {
                 day: 7,
-                sessionLength: 60
+                sessionLength: 120
             }
         ]
     },
@@ -158,23 +158,23 @@ const USER_AVERAGE_SESSIONS = [
             },
             {
                 day: 2,
-                sessionLength: 40
+                sessionLength: 60
             },
             {
                 day: 3,
-                sessionLength: 50
+                sessionLength: 10
             },
             {
                 day: 4,
-                sessionLength: 30
+                sessionLength: 5
             },
             {
                 day: 5,
-                sessionLength: 30
+                sessionLength: 70
             },
             {
                 day: 6,
-                sessionLength: 50
+                sessionLength: 20
             },
             {
                 day: 7,
@@ -198,7 +198,7 @@ const USER_PERFORMANCE = [
         },
         data: [
             {
-                value: 80,
+                value: 140,
                 kind: 1
             },
             {
@@ -210,7 +210,7 @@ const USER_PERFORMANCE = [
                 kind: 3
             },
             {
-                value: 50,
+                value: 170,
                 kind: 4
             },
             {
@@ -218,7 +218,7 @@ const USER_PERFORMANCE = [
                 kind: 5
             },
             {
-                value: 90,
+                value: 160,
                 kind: 6
             }
         ]
@@ -243,7 +243,7 @@ const USER_PERFORMANCE = [
                 kind: 2
             },
             {
-                value: 80,
+                value: 200,
                 kind: 3
             },
             {

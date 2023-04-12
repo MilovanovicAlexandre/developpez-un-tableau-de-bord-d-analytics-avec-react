@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './tooltipaveragesessions.css'
 
 function ToolTipAverageSessions({payload, active}) {
@@ -9,6 +10,11 @@ function ToolTipAverageSessions({payload, active}) {
             </div>
         )
     }
+}
+
+ToolTipAverageSessions.propTypes = {
+    active: PropTypes.bool,
+    payload: PropTypes.array,
 }
   
 export default ToolTipAverageSessions

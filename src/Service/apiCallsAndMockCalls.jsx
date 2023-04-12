@@ -9,7 +9,6 @@ async function getData(id,dataToRetrieve) {
     let response = null
 
     if(dataMocked === true){
-        console.log('id='+id+'et typeof(id)='+typeof(id))
         
         switch(dataToRetrieve) {
 
@@ -29,12 +28,9 @@ async function getData(id,dataToRetrieve) {
             case 'sessionsUserAverage':
                 response = USER_AVERAGE_SESSIONS.find(element => element.userId === id)
                 return response.sessions
-            case 'kindUserPerformance':
-                response = USER_PERFORMANCE.find(element => element.id === id)
-                return response.kind
-            case 'dataUserPerformance':
-                response = USER_PERFORMANCE.find(element => element.id === id)
-                return response.data
+            case 'userPerformance':
+                response = USER_PERFORMANCE.find(element => element.userId === id)
+                return response    
             default: 
                 return ''
         }
@@ -51,7 +47,7 @@ async function getData(id,dataToRetrieve) {
                 return response.data.data.todayScore
             case 'keyData':
                 response = await axios.get(`http://localhost:3001/user/${id}`)
-                response.keyData.calorieCount= (response.keyData.calorieCount).toLocaleString('en-US')
+                response.data.data.keyData.calorieCount= (response.data.data.keyData.calorieCount).toLocaleString('en-US')
                 return response.data.data.keyData
             case 'sessionsUserActivity':
                 response = await axios.get(`http://localhost:3001/user/${id}/activity`)
@@ -59,12 +55,9 @@ async function getData(id,dataToRetrieve) {
             case 'sessionsUserAverage':
                 response = await axios.get(`http://localhost:3001/user/${id}/average-sessions`)
                 return response.data.data.sessions
-            case 'kindUserPerformance':
+            case 'userPerformance':
                 response = await axios.get(`http://localhost:3001/user/${id}/performance`)
-                return response.data.data.kind
-            case 'dataUserPerformance':
-                response = await axios.get(`http://localhost:3001/user/${id}/performance`)
-                return response.data.data.data
+                return response.data.data    
             default: 
                 return ''
         }

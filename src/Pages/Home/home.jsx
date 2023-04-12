@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './home.css'
 import Header from '../../Components/HeaderHomePage/headerhomepage.jsx'
-//import VerticalNavigation from '../../Components/VerticalNavigation/verticalnavigation.jsx'
 
 function Home() {
     return (

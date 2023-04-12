@@ -20,8 +20,6 @@ function BarChartActivity() {
         
       },[id])
 
-    console.log('dataSessionsUserActivity='+dataSessionsUserActivity)
-
     return (
         <div className='mainContainerBarChartActivity'>
             <div className='containerTextDailyActivityWeightCalories'>
@@ -39,7 +37,7 @@ function BarChartActivity() {
                     </div>
                 </div>  
             </div>
-            <ResponsiveContainer width='90%' height={150}>
+            <ResponsiveContainer width='90%' height={120}>
               <BarChart data={dataSessionsUserActivity} margin={{top: 5,right: 5,left: 5,bottom: 5}}>
                 {/*strokeDasharray is the pattern of dashes and gaps to paint the lines of the grid, and vertical=false 
                 means no vertical frid lines will be drawn*/}
