@@ -1,5 +1,12 @@
 export {dataFormatting}
 
+/** 
+ * Function to format data according to the type of data
+ * @param { (Object | Number | Array ) } data data to format
+ * @param { String } dataType type of data to format
+ * @return { (Object | Array) } data which have been formatted 
+ */
+
 function dataFormatting(data, dataType) {
 
     if(dataType === 'sessionsUserActivity'){

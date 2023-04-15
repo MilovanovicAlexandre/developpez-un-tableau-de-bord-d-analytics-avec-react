@@ -2,10 +2,16 @@ import axios from 'axios'
 import {USER_MAIN_DATA,USER_ACTIVITY,USER_AVERAGE_SESSIONS,USER_PERFORMANCE} from '../Data/dataMock.js'
 export {getData}
 
-const dataMocked = true
+/**
+ * Function which gets the data of the user either from the mock file or the API
+ * @param { Number } id the user id for which we wish to retrieve the data  
+ * @param { String } dataToRetrieve  the type of data we want to retrieve, for example: 'keydata'
+ * @return { (Object | Number | Array ) } Function returns the data retrieved, the data can have 3 different types  
+ */
 
 async function getData(id,dataToRetrieve) {
 
+    const dataMocked = true
     let response = null
 
     if(dataMocked === true){

@@ -5,7 +5,12 @@ import { useParams } from 'react-router-dom'
 import { getData } from '../../Service/apiCallsAndMockCalls.jsx'
 import{dataFormatting} from '../../Service/dataFormatting.jsx'
 import ToolTipUserActivity from '../ToolTipUserActivity/tooltipuseractivity.jsx'
-import {ResponsiveContainer,BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip,Legend} from "recharts";
+import {ResponsiveContainer,BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip} from "recharts";
+
+/**
+ * Component which describes user's activity per day with kilogram and calories
+ * @component 
+ */
 
 function BarChartActivity() {
 
