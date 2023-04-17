@@ -4,6 +4,8 @@
 
 # SportSee's dashboard app
 
+https://github.com/MilovanovicAlexandre/developpez-un-tableau-de-bord-d-analytics-avec-react/blob/main/src/Assets/Image_README_SportSee.png
+
 SportSee is an app based on React where users can see their fitness progression.
 The file explains how to install SportSee app and how to execute it.
 Before installing this app you need to fullfill all the prerequisites incidated below.
