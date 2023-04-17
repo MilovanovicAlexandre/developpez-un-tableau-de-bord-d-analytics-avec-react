@@ -4,8 +4,7 @@ import './cursoraveragesessions.css'
 
 /**
  * Component which personnalizes the cursor and add a rectangle when the cursor is moving
- *  
- * @class
+ * @component 
  * 
  */
 
