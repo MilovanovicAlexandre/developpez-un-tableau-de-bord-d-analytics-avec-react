@@ -4,8 +4,7 @@
 
 # SportSee's dashboard app
 
-<img onerror="this.onerror=null; this.style='display:none';" src='src/Assets/Image_README_SportSee.png' alt='Image README SportSee' title='Image_README_SportSee'/>
-<img onerror="this.onerror=null; this.src=''; this.alt=''; this.title='';" src='Image_README_SportSee.png' alt='Image README SportSee' title='Image_README_SportSee'/>
+<img onerror="this.onerror=null; this.src='Image_README_SportSee.png';" src='src/Assets/Image_README_SportSee.png' alt='Image README SportSee' title='Image_README_SportSee'/>
 
 SportSee is an app based on React where users can see their fitness progression.
 The file explains how to install SportSee app and how to execute it.
