@@ -9,7 +9,8 @@ import {ResponsiveContainer,BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip} from
 
 /**
  * Component which describes user's activity per day with kilogram and calories
- * @component 
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing a recharts component named BarChart 
  */
 
 function BarChartActivity() {

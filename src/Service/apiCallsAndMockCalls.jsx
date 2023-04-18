@@ -4,9 +4,14 @@ export {getData}
 
 /**
  * Function which gets the data of the user either from the mock file or the API
+ * 
+ * Inside the function you can configurate the source of the data. 
+ * You can choose if you want the data from the data mocked file or from the backend API.
+ * To make you choice, you just need to modify variable 'datamocked' which is a boolean, you
+ * can switch is value between values 'false' and 'true' to make your choice.
  * @param { Number } id the user id for which we wish to retrieve the data  
  * @param { String } dataToRetrieve  the type of data we want to retrieve, for example: 'keydata'
- * @return { (Object | Number | Array ) } Function returns the data retrieved, the data can have 3 different types  
+ * @returns { (Object | Number | Array ) } Function returns the data retrieved, the data can have 3 different types  
  */
 
 async function getData(id,dataToRetrieve) {

@@ -6,6 +6,8 @@
 
 <img src='src/Assets/Image_README_SportSee.png' alt='Image README SportSee' title='Image_README_SportSee'/>
 
+<img src='Image_README_SportSee.png' alt='Image README SportSee' title='Image_README_SportSee'/>
+
 SportSee is an app based on React where users can see their fitness progression.
 The file explains how to install SportSee app and how to execute it.
 Before installing this app you need to fullfill all the prerequisites incidated below.
@@ -15,7 +17,7 @@ or backend API data.
 
 ## Prerequisites
 
-- Install npm => https://nodejs.org/en
+- Install npm => <a href='https://nodejs.org/en'>https://nodejs.org/en</a>
 - Install yarn => Enter the following command in your computer terminal:
 
     npm install --global yarn
@@ -26,7 +28,7 @@ or backend API data.
 
 - Enter the following command in your computer terminal: 
 
-    git clone https://github.com/MilovanovicAlexandre/developpez-un-tableau-de-bord-d-analytics-avec-react
+    git clone <a href='https://github.com/MilovanovicAlexandre/developpez-un-tableau-de-bord-d-analytics-avec-react'>https://github.com/MilovanovicAlexandre/developpez-un-tableau-de-bord-d-analytics-avec-react</a>
 ### Run Backend's app
 
 - Enter the following command in your computer terminal to move in the backend's folder:
@@ -55,7 +57,7 @@ The backend API is now available on port 3001.
 
     npm start
 
-The Frontend'app is now available on: http://localhost:3000/Home
+The Frontend'app is now available on: <a href='http://localhost:3000/Home'>http://localhost:3000/Home</a>
 
 ## Choose data's source: mock data or backend API data
 

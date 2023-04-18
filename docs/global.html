@@ -1,86 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Global</title>
+    <meta charset="utf-8">
+    <title>JSDoc: Global</title>
 
-  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src="./build/entry.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
-  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
-  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
-  <link type="text/css" rel="stylesheet" href="">
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
 
+<body>
 
+<div id="main">
 
-<body class="layout small-header">
-    <div id="stickyNavbarOverlay"></div>
+    <h1 class="page-title">Global</h1>
+
     
-
-<div class="top-nav">
-    <div class="inner">
-        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-        <div class="logo">
-            
-             
-                <a href="index.html">
-                    <h1 class="navbar-item">My JsDoc documentation</h1>
-                </a>
-            
-        </div>
-        <div class="menu">
-            
-            <div class="navigation">
-                <a
-                    href="index.html"
-                    class="link"
-                >
-                    Documentation
-                </a>
-                
-                
-                
-            </div>
-        </div>
-    </div>
-</div>
-    <div id="main">
-        <div
-            class="sidebar "
-            id="sidebarNav"
-        >
-            
-            <nav>
-                
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#dataFormatting">dataFormatting</a></li><li><a href="global.html#getData">getData</a></li></ul></div>
-                
-            </nav>
-        </div>
-        <div class="core" id="main-content-wrapper">
-            <div class="content">
-                <header class="page-title">
-                    <p></p>
-                    <h1>Global</h1>
-                </header>
-                
 
 
 
@@ -127,6 +66,7 @@
     
 
     
+
     
 
     
@@ -140,8 +80,6 @@
         
     
     </div>
-    
-    
 
     
 
@@ -156,31 +94,33 @@
     
 
     
-        <div class='vertical-section'>
-            <h1>Methods</h1>
-            <div class="members">
-            
-                <div class="member">
-
 
     
-    <h4 class="name" id="dataFormatting">
-        <a class="href-link" href="#dataFormatting">#</a>
+        <h3 class="subsection-title">Methods</h3>
+
         
-        <span class="code-name">
             
-                dataFormatting<span class="signature">(data, dataType)</span><span class="type-signature"> &rarr; {Object|Array}</span>
-            
-        </span>
-    </h4>
+
     
 
     
+    <h4 class="name" id="dataFormatting"><span class="type-signature"></span>dataFormatting<span class="signature">(data, dataType)</span><span class="type-signature"> &rarr; {Object|Array}</span></h4>
     
-    <div class="description">
-        <p>Function to format data according to the type of data</p>
-    </div>
+
     
+
+
+
+<div class="description">
+    <p>Function to format data according to the type of data</p>
+<p>According the type of data the formatting is the following:</p>
+<ul>
+ <li>datatype = sessionUserActivity : session.day is converted into a number</li>
+ <li>datatype = sessionUserAverage : session.day is converted into a day of the week </li>
+ <li>datatype = userPerformance : convert fitness features from english to french language</li>
+ <li>datatype = todayScore : return data as an object containing the data for the score chart and the data of the score to display on the page</li> 
+</ul>
+</div>
 
 
 
@@ -192,85 +132,81 @@
 
     <h5>Parameters:</h5>
     
-<div class="table-container">
-    <table class="params table">
-        <thead>
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
-            <th>Name</th>
+                <td class="name"><code>data</code></td>
             
 
-            <th>Type</th>
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Number</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
 
             
 
             
 
-            <th class="last">Description</th>
+            <td class="description last"><p>data to format</p></td>
         </tr>
-        </thead>
 
-        <tbody>
-        
+    
+
+        <tr>
+            
+                <td class="name"><code>dataType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
 
             
-<tr class="deep-level-0">
-  
-      <td class="name"><code>data</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">Object</code>
-|
-
-<code class="param-type">Number</code>
-|
-
-<code class="param-type">Array</code>
-
-
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last"><p>data to format</p></td>
-</tr>
-
-
-        
+            </td>
 
             
-<tr class="deep-level-0">
-  
-      <td class="name"><code>dataType</code></td>
-  
 
-  <td class="type">
-  
-      
-<code class="param-type">String</code>
+            
 
+            <td class="description last"><p>type of data to format</p></td>
+        </tr>
 
-  
-  </td>
+    
+    </tbody>
+</table>
 
-  
-
-  
-
-  <td class="description last"><p>type of data to format</p></td>
-</tr>
-
-
-        
-        </tbody>
-    </table>
-</div>
 
 
 
@@ -301,19 +237,18 @@
     
 
     
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Service_dataFormatting.jsx.html">Service/dataFormatting.jsx</a>, <a href="Service_dataFormatting.jsx.html#line18">line 18</a>
+    </li></ul></dd>
     
 
     
 
     
 
-    
-        <p class="tag-source">
-            <a href="Service_dataFormatting.jsx.html" class="button">View Source</a>
-            <span>
-                <a href="Service_dataFormatting.jsx.html">Service/dataFormatting.jsx</a>, <a href="Service_dataFormatting.jsx.html#line10">line 10</a>
-            </span>
-        </p>
     
 </dl>
 
@@ -331,67 +266,56 @@
 
 
 
+<h5>Returns:</h5>
 
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'><p>data which have been formatted</p></div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
         
-<code class="param-type">Object</code>
+<div class="param-desc">
+    <p>data which have been formatted</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
 |
 
-<code class="param-type">Array</code>
+<span class="param-type">Array</span>
 
 
-    </div>
-    
-</div>
-
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
+    </dd>
+</dl>
 
     
-    <h4 class="name" id="getData">
-        <a class="href-link" href="#getData">#</a>
+
+
+
+
+
         
             
-                <span class='tag'>async</span>
-            
-        
-        <span class="code-name">
-            
-                getData<span class="signature">(id, dataToRetrieve)</span><span class="type-signature"> &rarr; {Object|Number|Array}</span>
-            
-        </span>
-    </h4>
+
     
 
     
+    <h4 class="name" id="getData"><span class="type-signature">(async) </span>getData<span class="signature">(id, dataToRetrieve)</span><span class="type-signature"> &rarr; {Object|Number|Array}</span></h4>
     
-    <div class="description">
-        <p>Function which gets the data of the user either from the mock file or the API</p>
-    </div>
+
     
+
+
+
+<div class="description">
+    <p>Function which gets the data of the user either from the mock file or the API</p>
+<p>Inside the function you can configurate the source of the data.
+You can choose if you want the data from the data mocked file or from the backend API.
+To make you choice, you just need to modify variable 'datamocked' which is a boolean, you
+can switch is value between values 'false' and 'true' to make your choice.</p>
+</div>
 
 
 
@@ -403,79 +327,75 @@
 
     <h5>Parameters:</h5>
     
-<div class="table-container">
-    <table class="params table">
-        <thead>
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
-            <th>Name</th>
+                <td class="name"><code>id</code></td>
             
 
-            <th>Type</th>
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
 
             
 
             
 
-            <th class="last">Description</th>
+            <td class="description last"><p>the user id for which we wish to retrieve the data</p></td>
         </tr>
-        </thead>
 
-        <tbody>
-        
+    
+
+        <tr>
+            
+                <td class="name"><code>dataToRetrieve</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
 
             
-<tr class="deep-level-0">
-  
-      <td class="name"><code>id</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">Number</code>
-
-
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last"><p>the user id for which we wish to retrieve the data</p></td>
-</tr>
-
-
-        
+            </td>
 
             
-<tr class="deep-level-0">
-  
-      <td class="name"><code>dataToRetrieve</code></td>
-  
 
-  <td class="type">
-  
-      
-<code class="param-type">String</code>
+            
 
+            <td class="description last"><p>the type of data we want to retrieve, for example: 'keydata'</p></td>
+        </tr>
 
-  
-  </td>
+    
+    </tbody>
+</table>
 
-  
-
-  
-
-  <td class="description last"><p>the type of data we want to retrieve, for example: 'keydata'</p></td>
-</tr>
-
-
-        
-        </tbody>
-    </table>
-</div>
 
 
 
@@ -506,19 +426,18 @@
     
 
     
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Service_apiCallsAndMockCalls.jsx.html">Service/apiCallsAndMockCalls.jsx</a>, <a href="Service_apiCallsAndMockCalls.jsx.html#line17">line 17</a>
+    </li></ul></dd>
     
 
     
 
     
 
-    
-        <p class="tag-source">
-            <a href="Service_apiCallsAndMockCalls.jsx.html" class="button">View Source</a>
-            <span>
-                <a href="Service_apiCallsAndMockCalls.jsx.html">Service/apiCallsAndMockCalls.jsx</a>, <a href="Service_apiCallsAndMockCalls.jsx.html#line12">line 12</a>
-            </span>
-        </p>
     
 </dl>
 
@@ -536,47 +455,40 @@
 
 
 
+<h5>Returns:</h5>
 
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'><p>Function returns the data retrieved, the data can have 3 different types</p></div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
         
-<code class="param-type">Object</code>
+<div class="param-desc">
+    <p>Function returns the data retrieved, the data can have 3 different types</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
 |
 
-<code class="param-type">Number</code>
+<span class="param-type">Number</span>
 |
 
-<code class="param-type">Array</code>
+<span class="param-type">Array</span>
 
 
-    </div>
+    </dd>
+</dl>
+
     
-</div>
-
-                
-        </div>
-    </div>
 
 
 
 
-</div>
-            
-            </div>
-        </div>
+
+        
     
 
     
@@ -589,26 +501,19 @@
 
 
 
-            </div>
-            
-            <footer class="footer">
-                <div class="content has-text-centered">
-                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a></p>
-                    <p class="sidebar-created-by">
-                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
-                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
-                    </p>
-                </div>
-            </footer>
-            
-        </div>
-        <div id="side-nav" class="side-nav">
-        </div>
-    </div>
-<script src="scripts/app.min.js"></script>
-<script>PR.prettyPrint();</script>
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-DataMocked.html">DataMocked</a></li><li><a href="module-RouterComponent.html">RouterComponent</a></li></ul><h3>Namespaces</h3><ul><li><a href="BarChartActivity.html">BarChartActivity</a></li><li><a href="CursorAverageSessions.html">CursorAverageSessions</a></li><li><a href="Error.html">Error</a></li><li><a href="Header.html">Header</a></li><li><a href="HeaderHomePage.html">HeaderHomePage</a></li><li><a href="Home.html">Home</a></li><li><a href="KeyData.html">KeyData</a></li><li><a href="LineChartAverageSessions.html">LineChartAverageSessions</a></li><li><a href="Profile.html">Profile</a></li><li><a href="RadarChartUserPerformance.html">RadarChartUserPerformance</a></li><li><a href="RadialBarChartScore.html">RadialBarChartScore</a></li><li><a href="ToolTipAverageSessions.html">ToolTipAverageSessions</a></li><li><a href="ToolTipUserActivity.html">ToolTipUserActivity</a></li><li><a href="VerticalNavigation.html">VerticalNavigation</a></li></ul><h3>Global</h3><ul><li><a href="global.html#dataFormatting">dataFormatting</a></li><li><a href="global.html#getData">getData</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Tue Apr 18 2023 20:17:22 GMT+0200 (heure d’été d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
 <script src="scripts/linenumber.js"> </script>
-
-
 </body>
 </html>

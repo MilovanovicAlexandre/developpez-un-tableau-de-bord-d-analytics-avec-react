@@ -1,3 +1,20 @@
+/**
+ * @file
+ * The component App() contains the router of the application SportSee.
+ * You can see in this component all the paths you can access inside the SportSee application.
+ * 
+ * Paths available:
+ * <ul>
+ *  <li> / </li>
+ *  <li> /Home</li>
+ *  <li> /Profile/:userId<br />
+ *  Where userId is the id of the user you want to see the profil, for example: userId = 12 or userId = 18</li>
+ *  <li> * <br />
+ *  All other paths you can entering are leading to the error page</li>
+ * </ul>
+ * @module RouterComponent
+ */
+
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
 import Home from './Pages/Home/home.jsx'

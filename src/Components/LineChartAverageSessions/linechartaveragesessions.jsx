@@ -8,6 +8,12 @@ import CursorAverageSessions from '../CursorAverageSessions/cursoraveragesession
 import {ResponsiveContainer,LineChart,Line,XAxis,Tooltip} from "recharts";
 import './linechartaveragesessions.css'
 
+/**
+ * Component which describes user's average sessions with a curve
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing a recharts component named LineChart 
+ */
+
 function LineChartAverageSessions() {
     
     const {userId} = useParams()

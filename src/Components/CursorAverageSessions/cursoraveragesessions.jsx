@@ -4,8 +4,9 @@ import './cursoraveragesessions.css'
 
 /**
  * Component which personnalizes the cursor and add a rectangle when the cursor is moving
- * @component 
- * 
+ * @namespace 
+ * @property { Array } points coordinates of the cursor'dot on the chart
+ * @returns {JSX.Element} A JSX element containing the cursor component
  */
 
 function CursorAverageSessions({points}) {

@@ -6,6 +6,12 @@ import iconMusculation from '../../Assets/iconMusculation.png'
 import iconNatation from '../../Assets/iconNatation.png'
 import './verticalnavigation.css'
 
+/**
+ * Component which describes the vertical navigation containing some buttons
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing the component of the vertical navigation 
+ */
+
 function VerticalNavigation() {
 
     return (

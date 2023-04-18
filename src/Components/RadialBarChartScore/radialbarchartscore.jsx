@@ -6,6 +6,12 @@ import { dataFormatting } from '../../Service/dataFormatting.jsx'
 import {ResponsiveContainer,RadialBarChart,PolarAngleAxis,RadialBar} from 'recharts'
 import './radialbarchartscore.css'
 
+/**
+ * Component which describes user's score about fitness's aims, the score is displayed in percentage
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing a recharts component named RadialBarChart 
+ */
+
 function RadialBarChartScore() {
     
     const {userId} = useParams()

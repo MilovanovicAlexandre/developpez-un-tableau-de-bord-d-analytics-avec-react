@@ -6,6 +6,24 @@ import { getData } from '../../Service/apiCallsAndMockCalls.jsx'
 import PropTypes from 'prop-types'
 import './keydata.css'
 
+/**
+ * Component which is a 
+ * @namespace
+ * @property { String } keyDataName Name of the data that must be displayed in the keyData component 
+ * @property { String } keyDataImage Icon that must be displayed in the keyData component 
+ * @property { String } keyDataContainerImageClass the class of the container element of the icon element
+ * @returns {JSX.Element} A JSX element containing a keyData component with a value and a unit. 
+ * 
+ * The keyData returned can be one of the list below:
+ * <ul>
+ * <li>Calories</li>
+ * <li>Proteins</li>
+ * <li>Carbohydrate</li>
+ * <li>Lipid</li>
+ * </ul>
+ * 
+ */
+
 function KeyData({keyDataName,keyDataImage,keyDataContainerImageClass}) {
 
     const {userId} = useParams()

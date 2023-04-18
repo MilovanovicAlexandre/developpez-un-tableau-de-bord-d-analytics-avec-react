@@ -15,6 +15,23 @@ import iconGlucides from '../../Assets/iconGlucides.png'
 import iconLipides from '../../Assets/iconLipides.png'
 import './profile.css'
 
+/**
+ * Component which describes the profile page of the user with charts and key data
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing components from recharts library. 
+ * 
+ * The components returned are:
+ * <ul>
+ *  <li>Header</li>
+ *  <li>VerticalNavigation</li>
+ *  <li>BarChartActivity</li>
+ *  <li>LineChartAverageSessions</li>
+ *  <li>RadarChartUserPerformance</li>
+ *  <li>RadialBarChartScore</li>
+ *  <li>KeyData</li>
+ * <ul>
+ */
+
 function Profile() {
 
   const {userId} = useParams()

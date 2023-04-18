@@ -6,6 +6,12 @@ import {dataFormatting} from '../../Service/dataFormatting.jsx'
 import {ResponsiveContainer,RadarChart,PolarGrid,Radar,PolarAngleAxis} from "recharts";
 import './radarchartuserperformance.css'
 
+/**
+ * Component which describes user's performance with features on a radar chart
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing a recharts component named RadarChart 
+ */
+
 function RadarChartUserPerformance() {
 
     const {userId} = useParams()

@@ -3,6 +3,12 @@ import Header from '../../Components/HeaderHomePage/headerhomepage.jsx'
 import {Link} from 'react-router-dom'
 import './error.css'
 
+/**
+ * Component which describes the error 404 page when the assets are not found
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing the component of the error page 
+ */
+
 function Error() {
     return (
       <main>

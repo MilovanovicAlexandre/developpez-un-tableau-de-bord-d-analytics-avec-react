@@ -1,3 +1,11 @@
+/**
+ * Modules containing the dataMocked are defined in src/Data/dataMock.js
+ * @module DataMocked
+ */
+
+/**
+ * Main data of the 2 users contaning: user informations, today score and key data
+ */
 const USER_MAIN_DATA = [
     {
         id: 12,
@@ -30,6 +38,11 @@ const USER_MAIN_DATA = [
         }
     }
 ]
+
+
+/**
+ * Users activity data contaning: all sessions with day, kilogram and calories
+*/
 
 const USER_ACTIVITY = [
     {
@@ -114,6 +127,9 @@ const USER_ACTIVITY = [
     }
 ]
 
+/**
+ * Users average session data contaning: all sessions with day and session length
+*/
 
 const USER_AVERAGE_SESSIONS = [
     {
@@ -184,6 +200,9 @@ const USER_AVERAGE_SESSIONS = [
     }
 ]
 
+/**
+ * Users performance data contaning: features about fitness and all related value and kind
+*/
 
 const USER_PERFORMANCE = [
     {

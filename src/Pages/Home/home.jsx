@@ -3,6 +3,12 @@ import {Link} from 'react-router-dom'
 import './home.css'
 import Header from '../../Components/HeaderHomePage/headerhomepage.jsx'
 
+/**
+ * Component which describes the home page of the app with the selection of users
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing the component of the home page 
+*/
+
 function Home() {
     return (
       <main>

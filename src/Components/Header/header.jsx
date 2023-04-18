@@ -3,6 +3,12 @@ import {Link, NavLink} from 'react-router-dom'
 import './header.css'
 import logoSportSee from '../../Assets/logoSportSee.png'
 
+/**
+ * Component which describes the header for the profile page
+ * @namespace
+ * @returns {JSX.Element} A JSX element containing the component of the header profile page 
+ */
+
 function Header() {
     return (
       <header className='pageHeader'>

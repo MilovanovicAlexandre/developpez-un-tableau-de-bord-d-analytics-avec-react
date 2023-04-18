@@ -2,9 +2,17 @@ export {dataFormatting}
 
 /** 
  * Function to format data according to the type of data
+ * 
+ * According the type of data the formatting is the following:
+ * <ul>
+ *  <li>datatype = sessionUserActivity : session.day is converted into a number</li>
+ *  <li>datatype = sessionUserAverage : session.day is converted into a day of the week </li>
+ *  <li>datatype = userPerformance : convert fitness features from english to french language</li>
+ *  <li>datatype = todayScore : return data as an object containing the data for the score chart and the data of the score to display on the page</li> 
+ * </ul>
  * @param { (Object | Number | Array ) } data data to format
  * @param { String } dataType type of data to format
- * @return { (Object | Array) } data which have been formatted 
+ * @returns { (Object | Array) } data which have been formatted 
  */
 
 function dataFormatting(data, dataType) {
