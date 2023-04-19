@@ -29,6 +29,8 @@ or backend API data.
     git clone <a href='https://github.com/MilovanovicAlexandre/developpez-un-tableau-de-bord-d-analytics-avec-react'>https://github.com/MilovanovicAlexandre/developpez-un-tableau-de-bord-d-analytics-avec-react</a>
 ### Run Backend's app
 
+- On your computer terminal go to the root of the repository
+
 - Enter the following command in your computer terminal to move in the backend's folder:
 
     cd backend
