@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 import './keydata.css'
 
 /**
- * Component which is a 
+ * Component which is a card with a keyData of fitness with a value, a unit and a name 
  * @namespace
  * @property { String } keyDataName Name of the data that must be displayed in the keyData component 
  * @property { String } keyDataImage Icon that must be displayed in the keyData component 
