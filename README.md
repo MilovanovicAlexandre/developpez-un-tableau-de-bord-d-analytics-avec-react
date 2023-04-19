@@ -27,6 +27,7 @@ or backend API data.
 - Enter the following command in your computer terminal: 
 
     git clone <a href='https://github.com/MilovanovicAlexandre/developpez-un-tableau-de-bord-d-analytics-avec-react'>https://github.com/MilovanovicAlexandre/developpez-un-tableau-de-bord-d-analytics-avec-react</a>
+
 ### Run Backend's app
 
 - On your computer terminal go to the root of the repository
@@ -43,7 +44,7 @@ or backend API data.
 
     yarn dev
 
-The backend API is now available on port 3001. 
+The Backend API is now available on port 3001. 
 
 ### Run Frontend's app
 
@@ -59,7 +60,7 @@ The backend API is now available on port 3001.
 
 The Frontend'app is now available on: <a href='http://localhost:3000/Home'>http://localhost:3000/Home</a>
 
-## Choose data's source: mock data or backend API data
+## Choose data's source: mock data or Backend API data
 
 Mocked data are located in /src/Data/dataMock.js
 
